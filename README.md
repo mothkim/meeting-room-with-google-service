@@ -18,7 +18,6 @@
 
 <img width="600" alt="image" src="https://github.com/mothkim/meeting-room-with-google-service/assets/105619969/7971d9df-b258-402c-92db-0387d08e5565">
 
-
 2. Link ไปที่ Google Sheet เพื่อบันทึกข้อมูลที่กรอกใน Google Form ลงใน Google Sheet
 
 <img width="593" alt="image" src="https://github.com/mothkim/meeting-room-with-google-service/assets/105619969/c134f21a-8226-47c3-88e5-b6d4a4d96484">
@@ -54,9 +53,11 @@ function myfunction () {
 <img width="1274" alt="image" src="https://github.com/mothkim/meeting-room-with-google-service/assets/105619969/8cb39b23-6b18-4c67-a4f1-29193fc8d42f">
 
 รูปด้านล่างนี้คือ Google Sheet ID
+
 <img width="980" alt="image" src="https://github.com/mothkim/meeting-room-with-google-service/assets/105619969/9bffca1e-91d2-4896-9803-91fd3a81f89c">
 
 ชื่อของ Google Sheet ที่ต้องการหยิบข้อมูลไปใช้
+
 <img width="275" alt="image" src="https://github.com/mothkim/meeting-room-with-google-service/assets/105619969/8699b134-0d8c-4533-938f-183a01461a52">
 
 ใส่ตรงนี้ และก็ใส่ชื่อ Sheet ที่มีข้อมูลด้วยเด้อที่ด้านหลัง ในตัวอย่างนี้จะชื่อ Time_Room
@@ -69,10 +70,11 @@ var mySpreadSheet = SpreadsheetApp.openById("1fGIURbOrnBaienF5Bbhmb0EzedG-8r3BWB
 สร้าง Calendar ใหม่ แต่ถ้ามีอันที่ต้องการใช้อยู่แล้วข้ามไปเลยก็ได้
 
 <img width="260" alt="image" src="https://github.com/mothkim/meeting-room-with-google-service/assets/105619969/7e0f55a6-7515-4fb1-84b1-ff1043d41e15">
-
+<br/>
 <img width="252" alt="image" src="https://github.com/mothkim/meeting-room-with-google-service/assets/105619969/5c23b3d8-c8a6-410f-985c-3396a7e1e34d">
-
+<br/>
 <img width="432" alt="image" src="https://github.com/mothkim/meeting-room-with-google-service/assets/105619969/03c194c7-9e89-4ec1-9600-3d56550c3ef4">
+
 
 <img width="432" alt="image" src="https://github.com/mothkim/meeting-room-with-google-service/assets/105619969/5274fa91-8f63-4ebf-8a1a-29ea1f422b9f">
 
@@ -150,3 +152,19 @@ MailApp.sendEmail({
 });
 ```
 
+## เตรียมทุกอย่างเสร็จแล้ว พร้อมใช้งาน แต่ว่าจะต้องไปกำหนด Trigger ก่อนเพื่อให้ Apps Script รุ้ว่าจะต้องทำงานตอนไหน
+
+<img width="367" alt="image" src="https://github.com/mothkim/meeting-room-with-google-service/assets/105619969/dacec547-e78d-4ebd-a628-18980f6dd581">
+
+<img width="1417" alt="image" src="https://github.com/mothkim/meeting-room-with-google-service/assets/105619969/f8bc69f9-32cf-4366-b711-94ce0dc2e481">
+
+<img width="707" alt="image" src="https://github.com/mothkim/meeting-room-with-google-service/assets/105619969/dd39a1f3-2c21-4a86-ae5c-551bc6197ac2">
+
+เสร็จแล้วกด SAVE แล้วก็ไทดสอบดู ตามลำดับ
+1. กรอกข้อมูลที่ Google Form
+2. ตรวจสอบข้อมูลใน Google Sheet ว่าที่กรอกไป ข้อมูลถูกต้องไหม
+3. ตรวจสอบ calendar ว่ามีการสร้าง Event ไหม
+4. ลองกรอกข้อมูลที่ Google Form ใหม่ ที่นี่ใส่ข้อมูลให้ซ้ำกับที่กรอกก่อนหน้านี้ เพราะอยากได้แจ้งเตือน
+5. ถ้าแจ้งเดือนกรณีที่จองห้องและเวลาซ้ำกับคนอื่น แปลว่าการทำงานถูกต้อง
+
+# ยินดีด้วย คุณเป็นส่วนหนึ่งของการเรียนรู้สิ่งใหม่ๆ เพื่อนำไปใช้กับการทำงานหรือชีวิตประจำวัน หรืออาจแค่เรียนรู้สิ่งใหม่ๆ #
